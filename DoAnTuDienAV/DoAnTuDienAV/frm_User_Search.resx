@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtVNDetail.Text" xml:space="preserve">
+    <value>Danh từ
+bàn viết, bàn làm việc, bàn học sinh
+an office desk
+bàn làm việc ở văn phòng
+a school desk
+bàn học sinh
+bàn (ở khách sạn, sân bay)
+information desk
+bàn chỉ dẫn
+phòng, ban, tổ (ở tờ báo, ở một bộ)
+Jefferies is running the sports desk
+Jefferies đang phụ trách tổ thể thao
+
+* Các từ tương tự:
+desk clerk, desk-top, desk-top publishing, deskbound, desktop computer, desktop publishing (DTP), desktop publishing equipment, desktop video unit
+Laban.vn</value>
+  </data>
+  <data name="lbItem.DataSource" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
+        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABVTeXN0ZW0uRGF0YS5E
+        YXRhVGFibGUDAAAAGURhdGFUYWJsZS5SZW1vdGluZ1ZlcnNpb24JWG1sU2NoZW1hC1htbERpZmZHcmFt
+        AwEBDlN5c3RlbS5WZXJzaW9uAgAAAAkDAAAABgQAAACUBzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rp
+        bmc9InV0Zi0xNiI/Pg0KPHhzOnNjaGVtYSB4bWxucz0iIiB4bWxuczp4cz0iaHR0cDovL3d3dy53My5v
+        cmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4
+        bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iVGFibGUiPg0KICAgIDx4czpjb21wbGV4VHlw
+        ZT4NCiAgICAgIDx4czpzZXF1ZW5jZT4NCiAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iSUQiIHR5cGU9
+        InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAg
+        ICAgIDx4czplbGVtZW50IG5hbWU9IkVuZ2xpc2giIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdl
+        dE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlNo
+        b3J0Vk4iIHR5cGU9InhzOnN0cmluZyIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9
+        IjAiIC8+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlZOIiB0eXBlPSJ4czpzdHJpbmciIG1zZGF0
+        YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAvPg0KICAgICAgPC94czpzZXF1ZW5jZT4N
+        CiAgICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8L3hzOmVsZW1lbnQ+DQogIDx4czplbGVtZW50IG5hbWU9
+        Ik5ld0RhdGFTZXQiIG1zZGF0YTpJc0RhdGFTZXQ9InRydWUiIG1zZGF0YTpNYWluRGF0YVRhYmxlPSJU
+        YWJsZSIgbXNkYXRhOlVzZUN1cnJlbnRMb2NhbGU9InRydWUiPg0KICAgIDx4czpjb21wbGV4VHlwZT4N
+        CiAgICAgIDx4czpjaG9pY2UgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgLz4NCiAg
+        ICA8L3hzOmNvbXBsZXhUeXBlPg0KICA8L3hzOmVsZW1lbnQ+DQo8L3hzOnNjaGVtYT4GBQAAAK8QPGRp
+        ZmZncjpkaWZmZ3JhbSB4bWxuczptc2RhdGE9InVybjpzY2hlbWFzLW1pY3Jvc29mdC1jb206eG1sLW1z
+        ZGF0YSIgeG1sbnM6ZGlmZmdyPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnhtbC1kaWZmZ3JhbS12
+        MSI+DQogIDxOZXdEYXRhU2V0Pg0KICAgIDxUYWJsZSBkaWZmZ3I6aWQ9IlRhYmxlMSIgbXNkYXRhOnJv
+        d09yZGVyPSIwIj4NCiAgICAgIDxJRD4xPC9JRD4NCiAgICAgIDxFbmdsaXNoPmRlc2s8L0VuZ2xpc2g+
+        DQogICAgICA8U2hvcnRWTj5iw6BuIHZp4bq/dCwgYsOgbiBsw6BtIHZp4buHYywgYsOgbiBo4buNYyBz
+        aW5oPC9TaG9ydFZOPg0KICAgICAgPFZOPkRhbmggdOG7qw0KYsOgbiB2aeG6v3QsIGLDoG4gbMOgbSB2
+        aeG7h2MsIGLDoG4gaOG7jWMgc2luaA0KYW4gb2ZmaWNlIGRlc2sNCmLDoG4gbMOgbSB2aeG7h2Mg4buf
+        IHbEg24gcGjDsm5nDQphIHNjaG9vbCBkZXNrDQpiw6BuIGjhu41jIHNpbmgNCmLDoG4gKOG7nyBraMOh
+        Y2ggc+G6oW4sIHPDom4gYmF5KQ0KaW5mb3JtYXRpb24gZGVzaw0KYsOgbiBjaOG7iSBk4bqrbg0KcGjD
+        sm5nLCBiYW4sIHThu5UgKOG7nyB04budIGLDoW8sIOG7nyBt4buZdCBi4buZKQ0KSmVmZmVyaWVzIGlz
+        IHJ1bm5pbmcgdGhlIHNwb3J0cyBkZXNrDQpKZWZmZXJpZXMgxJFhbmcgcGjhu6UgdHLDoWNoIHThu5Ug
+        dGjhu4MgdGhhbw0KDQoqIEPDoWMgdOG7qyB0xrDGoW5nIHThu7E6DQpkZXNrIGNsZXJrLCBkZXNrLXRv
+        cCwgZGVzay10b3AgcHVibGlzaGluZywgZGVza2JvdW5kLCBkZXNrdG9wIGNvbXB1dGVyLCBkZXNrdG9w
+        IHB1Ymxpc2hpbmcgKERUUCksIGRlc2t0b3AgcHVibGlzaGluZyBlcXVpcG1lbnQsIGRlc2t0b3Agdmlk
+        ZW8gdW5pdA0KTGFiYW4udm48L1ZOPg0KICAgIDwvVGFibGU+DQogICAgPFRhYmxlIGRpZmZncjppZD0i
+        VGFibGUyIiBtc2RhdGE6cm93T3JkZXI9IjEiPg0KICAgICAgPElEPjM8L0lEPg0KICAgICAgPEVuZ2xp
+        c2g+Y29tcHV0ZXI8L0VuZ2xpc2g+DQogICAgICA8U2hvcnRWTj5NYXkgdGluaDwvU2hvcnRWTj4NCiAg
+        ICAgIDxWTj5EYW5oIHThu6sNCnRyxrDhu51uZyBo4bujcCwgY2ENCkkgY2Fubm90IG1ha2UgYW4gZXhj
+        ZXB0aW9uIGluIHlvdXIgY2FzZQ0KdMO0aSBraMO0bmcgdGjhu4MgY8OzIG5nb+G6oWkgbOG7hyDEkeG7
+        kWkgduG7m2kgdHLGsOG7nW5nIGjhu6NwIGPhu6dhIGFuaA0KYSBjYXNlIG9mIHR5cGhvaWQNCm3hu5l0
+        IGNhIHRoxrDGoW5nIGjDoG4NCnRoaXMgYm95IGlzIGEgc2FkIGNhc2UsIGhpcyBwYXJlbnRzIGFyZSBk
+        aXZvcmNlZCBhbmQgaGUgaGltc2VsZiBpcyBzZXZlcmVseSBoYW5kaWNhcHBlZA0KxJHhu6lhIGLDqSBu
+        w6B5IGzDoCBt4buZdCB0csaw4budbmcgaOG7o3AgxJHDoW5nIGJ14buTbiwgY2hhIG3hurkgbsOzIMSR
+        w6MgbHkgaMO0biB2w6AgYuG6o24gdGjDom4gbsOzIGPFqW5nIGLhu4sgdOG6rXQgbmd1eeG7gW4gbuG6
+        t25nDQp0aGUgY2FzZQ0KaGnhu4duIHRy4bqhbmc7IHPhu7EgdMOsbmgNCmlmIHRoYXQgaXMgdGhlIGNh
+        c2UsIHlvdSB3aWxsIGhhdmUgdG8gd29yayBtdWNoIGhhcmRlcg0KbuG6v3UgaGnhu4duIHRy4bqhbmcg
+        xJHDum5nIGzDoCBuaMawIHbhuq15IHRow6wgYW5oIHPhur0gcGjhuqNpIGzDoG0gdmnhu4djIGThu68g
+        aMahbiBuaGnhu4F1DQp24bulIGtp4buHbiBjw6FvDQp3aGVuIGRvZXMgeW91ciBjYXNlIGNvbWUgYmVm
+        b3JlIHRoZSBjb3VydD8NCktoaSBuw6BvIHRow6wgduG7pSBraeG7h24gY+G7p2EgYW5oIHPhur0gxJFl
+        bSByYSB44butPw0Kc+G7sSBiaeG7h24gaOG7mTsgbMO9IGzhur0gYmnhu4duIGjhu5kNCnRoZSBjYXNl
+        IGZvciB0aGUgZGVmZW5jZQ0KbMO9IGzhur0gYmnhu4duIGjhu5kgY2hvIGLDqm4gYuG7izwvVk4+DQog
+        ICAgPC9UYWJsZT4NCiAgICA8VGFibGUgZGlmZmdyOmlkPSJUYWJsZTMiIG1zZGF0YTpyb3dPcmRlcj0i
+        MiI+DQogICAgICA8SUQ+NDwvSUQ+DQogICAgICA8RW5nbGlzaD5waG9uZTwvRW5nbGlzaD4NCiAgICAg
+        IDxTaG9ydFZOPmRpZW4gdGhvYWk8L1Nob3J0Vk4+DQogICAgICA8Vk4+bGEgdmF0IGRlIG5naGU8L1ZO
+        Pg0KICAgIDwvVGFibGU+DQogIDwvTmV3RGF0YVNldD4NCjwvZGlmZmdyOmRpZmZncmFtPgQDAAAADlN5
+        c3RlbS5WZXJzaW9uBAAAAAZfTWFqb3IGX01pbm9yBl9CdWlsZAlfUmV2aXNpb24AAAAACAgICAIAAAAA
+        AAAA//////////8L
+</value>
+  </data>
+</root>
