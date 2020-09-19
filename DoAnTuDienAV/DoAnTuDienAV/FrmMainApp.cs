@@ -81,6 +81,7 @@ namespace DoAnTuDienAV
                 txtEnglish2.Text = lbItem.Text;
                 if(ds.Rows.Count>0)
                 {
+                    idx.Text = ds.Rows[0]["ID"].ToString();
                     txtVN2.Text = ds.Rows[0]["ShortVN"].ToString();
                     txtVNDetail.Text = ds.Rows[0]["VN"].ToString();
                 }

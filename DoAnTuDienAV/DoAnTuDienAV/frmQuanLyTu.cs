@@ -51,7 +51,7 @@ namespace DoAnTuDienAV
 
                     //khai báo các biến sẽ truyền vào
                     //int id = int.Parse(txtID.Text.Trim());
-                    string id = txtID1.Text.Trim();
+                   
                     string eng = txtEnglish1.Text.Trim();
                     string shortvn = txtShortVN.Text.Trim();
                     string dich = txtDich.Text.Trim();
@@ -61,7 +61,7 @@ namespace DoAnTuDienAV
                     //string dich = txtDich.Text.Trim();
 
                     //truyen du lieu len SQL
-                    SqlHelper.SqlHelper.ExecuteNonQuery(SQLstring.strCon, "TuDien_Them1", id, eng, shortvn, dich);
+                    SqlHelper.SqlHelper.ExecuteNonQuery(SQLstring.strCon, "TuDien_Them1",  eng, shortvn, dich);
                     MessageBox.Show("Thêm thành công");
                 }
                 catch (Exception ex)

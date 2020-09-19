@@ -39,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.Label();
+            this.idx = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +65,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.idx);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.txtVN2);
             this.groupBox2.Controls.Add(this.txtEnglish2);
@@ -153,6 +155,15 @@
             this.txtID.TabIndex = 2;
             this.txtID.Text = "Từ cần tra";
             // 
+            // idx
+            // 
+            this.idx.Location = new System.Drawing.Point(222, 158);
+            this.idx.Name = "idx";
+            this.idx.Size = new System.Drawing.Size(144, 23);
+            this.idx.TabIndex = 10;
+            this.idx.Text = "button2";
+            this.idx.UseVisualStyleBackColor = true;
+            // 
             // FrmMainApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,5 +194,6 @@
         protected System.Windows.Forms.Label label2;
         protected System.Windows.Forms.ListBox lbItem;
         protected System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button idx;
     }
 }
