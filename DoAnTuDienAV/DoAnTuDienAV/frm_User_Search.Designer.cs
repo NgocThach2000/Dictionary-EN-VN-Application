@@ -50,6 +50,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.groupBox3);
+            this.groupBox2.Controls.SetChildIndex(this.lbImg, 0);
             this.groupBox2.Controls.SetChildIndex(this.txtID, 0);
             this.groupBox2.Controls.SetChildIndex(this.label1, 0);
             this.groupBox2.Controls.SetChildIndex(this.label2, 0);
@@ -57,7 +58,6 @@
             this.groupBox2.Controls.SetChildIndex(this.btTraTu, 0);
             this.groupBox2.Controls.SetChildIndex(this.txtEnglish2, 0);
             this.groupBox2.Controls.SetChildIndex(this.txtVN2, 0);
-            this.groupBox2.Controls.SetChildIndex(this.button1, 0);
             this.groupBox2.Controls.SetChildIndex(this.groupBox3, 0);
             // 
             // label1
@@ -100,14 +100,7 @@
             // lbItem
             // 
             this.lbItem.DisplayMember = "English";
-            this.lbItem.Location = new System.Drawing.Point(6, 19);
             this.lbItem.ValueMember = "ID";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(270, 102);
-            this.button1.Size = new System.Drawing.Size(75, 29);
-            this.button1.Text = "Nghe";
             // 
             // label3
             // 
@@ -178,7 +171,7 @@
             this.Name_User.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Name_User.Location = new System.Drawing.Point(89, 159);
             this.Name_User.Name = "Name_User";
-            this.Name_User.Size = new System.Drawing.Size(100, 13);
+            this.Name_User.Size = new System.Drawing.Size(100, 15);
             this.Name_User.TabIndex = 12;
             // 
             // label4
@@ -186,7 +179,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.Size = new System.Drawing.Size(106, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "Tên tài khoản:";
             // 

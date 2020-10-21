@@ -201,6 +201,42 @@
   <ItemGroup>
     <None Include="Resources\May-bay-1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoutImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\testbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DictionaryHomeback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dicPic02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoaNotconvert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cheear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewreal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchreal.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.14.0\build\Microsoft.ApplicationInsights.DependencyCollector.targets" Condition="Exists('..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.14.0\build\Microsoft.ApplicationInsights.DependencyCollector.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

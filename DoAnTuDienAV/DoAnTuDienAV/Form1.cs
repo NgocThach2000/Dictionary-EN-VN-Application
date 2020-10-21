@@ -17,7 +17,7 @@ namespace DoAnTuDienAV
     {
         public Form1()
         {
-            InitializeComponent();
+           InitializeComponent();
            this.AcceptButton = this.button1;
         }
 
@@ -37,6 +37,7 @@ namespace DoAnTuDienAV
         private void btQL_Click(object sender, EventArgs e)
         {
             //khi cần  thêm từ thì hiện form đăng nhập để quản lý từ
+            PicBackground.Hide();
             groupBox1.Show();
         }
 
@@ -99,6 +100,17 @@ namespace DoAnTuDienAV
         {
             frmRegister frm = new frmRegister();
             frm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtUser.Text = "";
+            txtPass.Text = "";
         }
     }
 }

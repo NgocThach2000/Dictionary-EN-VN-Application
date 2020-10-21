@@ -97,10 +97,6 @@ namespace DoAnTuDienAV
             }
                     
         }
-        private void loaddata()
-        {
-            string string_user = user.Trim();
-            lbItem_user.DataSource = SqlHelper.SqlHelper.ExecuteDataset(SQLstring.strCon, "TuDien_Select_user", string_user).Tables[0];
-        }
+      
     }
 }

@@ -74,15 +74,11 @@ namespace DoAnTuDienAV
                 MessageBox.Show("Không có quyền");
             }
         }
-            
-            
-            
-            
-        
 
         private void loaddata() 
         {
-            gridItemData.DataSource = SqlHelper.SqlHelper.ExecuteDataset(SQLstring.strCon, "TuDien_Select").Tables[0];
+            //comment code below to setting GUI --Thach
+            //gridItemData.DataSource = SqlHelper.SqlHelper.ExecuteDataset(SQLstring.strCon, "TuDien_Select").Tables[0];
         }
 
         private void btLam_Click(object sender, EventArgs e)

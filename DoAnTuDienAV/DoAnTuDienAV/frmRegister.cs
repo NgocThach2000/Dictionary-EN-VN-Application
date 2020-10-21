@@ -41,7 +41,7 @@ namespace DoAnTuDienAV
                 }
                 else
                 {
-                    MessageBox.Show("Bạn còn để trống thông tin, vui lòng nhập đầy đủ thông tin");
+                    MessageBox.Show("Bạn còn để trống thông tin, vui lòng nhập đầy đủ thông tin!");
                 }
                 
             }
@@ -49,6 +49,20 @@ namespace DoAnTuDienAV
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void bt_Reset_Click(object sender, EventArgs e)
+        {
+            txt_userRegister.Text = "";
+            txt_passRegister.Text = "";
+            txt_rppassRegister.Text = "";
+        }
+
+        private void btLogin_Click(object sender, EventArgs e)
+        {
+            FrmLogin login = new FrmLogin();
+            this.Hide();
+            login.ShowDialog();
         }
     }
 
