@@ -59,5 +59,12 @@ namespace W_DICTIONARY
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txt_User.Text = "";
+            Txt_pass.Text = "";
+            txt_Pass_reput.Text = "";
+        }
     }
 }

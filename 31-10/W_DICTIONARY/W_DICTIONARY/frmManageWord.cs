@@ -175,5 +175,10 @@ namespace W_DICTIONARY
                 pictureBox1.ImageLocation = imgLocation;
             }
         }
+
+        private void btn_Back_CursorChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

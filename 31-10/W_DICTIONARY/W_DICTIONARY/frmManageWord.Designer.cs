@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManagerWord));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Browse_Image = new System.Windows.Forms.Button();
             this.btn_Back = new System.Windows.Forms.Button();
@@ -48,19 +49,20 @@
             this.btn_Reput = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gridItemData = new System.Windows.Forms.DataGridView();
-            this.listWordBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dictionaryDataSet1 = new W_DICTIONARY.DictionaryDataSet1();
-            this.listWordBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dictionaryDataSet = new W_DICTIONARY.DictionaryDataSet();
-            this.listWordTableAdapter = new W_DICTIONARY.DictionaryDataSetTableAdapters.ListWordTableAdapter();
-            this.listWordTableAdapter1 = new W_DICTIONARY.DictionaryDataSet1TableAdapters.ListWordTableAdapter();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.idwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.English = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vNShortDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vNLongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.imgLocationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listWordBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dictionaryDataSet1 = new W_DICTIONARY.DictionaryDataSet1();
+            this.listWordBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dictionaryDataSet = new W_DICTIONARY.DictionaryDataSet();
+            this.listWordTableAdapter = new W_DICTIONARY.DictionaryDataSetTableAdapters.ListWordTableAdapter();
+            this.listWordTableAdapter1 = new W_DICTIONARY.DictionaryDataSet1TableAdapters.ListWordTableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridItemData)).BeginInit();
@@ -68,11 +70,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dictionaryDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listWordBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dictionaryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox1.Controls.Add(this.btn_Browse_Image);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btn_Back);
@@ -90,142 +94,167 @@
             this.groupBox1.Controls.Add(this.txtShorVN);
             this.groupBox1.Controls.Add(this.txtEnglish);
             this.groupBox1.Controls.Add(this.btn_Reput);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1232, 275);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1524, 338);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thêm từ mới";
+            this.groupBox1.Text = "Quản Lý Từ";
             // 
             // btn_Browse_Image
             // 
-            this.btn_Browse_Image.Location = new System.Drawing.Point(1067, 232);
+            this.btn_Browse_Image.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Browse_Image.Location = new System.Drawing.Point(1271, 283);
+            this.btn_Browse_Image.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Browse_Image.Name = "btn_Browse_Image";
-            this.btn_Browse_Image.Size = new System.Drawing.Size(86, 23);
+            this.btn_Browse_Image.Size = new System.Drawing.Size(133, 47);
             this.btn_Browse_Image.TabIndex = 27;
             this.btn_Browse_Image.Text = "Tải ảnh";
-            this.btn_Browse_Image.UseVisualStyleBackColor = true;
+            this.btn_Browse_Image.UseVisualStyleBackColor = false;
             this.btn_Browse_Image.Click += new System.EventHandler(this.btn_Browse_Image_Click);
             // 
             // btn_Back
             // 
-            this.btn_Back.Location = new System.Drawing.Point(843, 209);
+            this.btn_Back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_Back.Location = new System.Drawing.Point(1064, 244);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(86, 23);
+            this.btn_Back.Size = new System.Drawing.Size(133, 47);
             this.btn_Back.TabIndex = 9;
-            this.btn_Back.Text = "Quay lại";
-            this.btn_Back.UseVisualStyleBackColor = true;
+            this.btn_Back.Text = "Tải Lại";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.CursorChanged += new System.EventHandler(this.btn_Back_CursorChanged);
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(719, 126);
+            this.label3.Location = new System.Drawing.Point(879, 155);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 20);
+            this.label3.Size = new System.Drawing.Size(168, 25);
             this.label3.TabIndex = 25;
-            this.label3.Text = "Từ cần tìm";
+            this.label3.Text = "Nhập Từ Cần Tìm";
             // 
             // txt_id_search
             // 
             this.txt_id_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_id_search.Location = new System.Drawing.Point(665, 149);
+            this.txt_id_search.Location = new System.Drawing.Point(817, 184);
+            this.txt_id_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_search.Name = "txt_id_search";
-            this.txt_id_search.Size = new System.Drawing.Size(208, 23);
+            this.txt_id_search.Size = new System.Drawing.Size(276, 26);
             this.txt_id_search.TabIndex = 7;
             // 
             // txt_id_Manager
             // 
-            this.txt_id_Manager.Location = new System.Drawing.Point(105, 236);
+            this.txt_id_Manager.Location = new System.Drawing.Point(140, 290);
+            this.txt_id_Manager.Margin = new System.Windows.Forms.Padding(4);
             this.txt_id_Manager.Name = "txt_id_Manager";
-            this.txt_id_Manager.Size = new System.Drawing.Size(168, 20);
+            this.txt_id_Manager.Size = new System.Drawing.Size(223, 27);
             this.txt_id_Manager.TabIndex = 10;
             this.txt_id_Manager.Visible = false;
             // 
             // btn_Manager_Search
             // 
-            this.btn_Manager_Search.Location = new System.Drawing.Point(712, 198);
+            this.btn_Manager_Search.BackColor = System.Drawing.Color.YellowGreen;
+            this.btn_Manager_Search.Location = new System.Drawing.Point(766, 244);
+            this.btn_Manager_Search.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Manager_Search.Name = "btn_Manager_Search";
-            this.btn_Manager_Search.Size = new System.Drawing.Size(100, 45);
+            this.btn_Manager_Search.Size = new System.Drawing.Size(133, 47);
             this.btn_Manager_Search.TabIndex = 8;
             this.btn_Manager_Search.Text = "Tìm kiếm";
-            this.btn_Manager_Search.UseVisualStyleBackColor = true;
+            this.btn_Manager_Search.UseVisualStyleBackColor = false;
             this.btn_Manager_Search.Click += new System.EventHandler(this.btn_Manager_Search_Click);
             // 
             // btn_EditWord
             // 
-            this.btn_EditWord.Location = new System.Drawing.Point(723, 56);
+            this.btn_EditWord.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_EditWord.Location = new System.Drawing.Point(914, 69);
+            this.btn_EditWord.Margin = new System.Windows.Forms.Padding(4);
             this.btn_EditWord.Name = "btn_EditWord";
-            this.btn_EditWord.Size = new System.Drawing.Size(100, 38);
+            this.btn_EditWord.Size = new System.Drawing.Size(133, 47);
             this.btn_EditWord.TabIndex = 4;
             this.btn_EditWord.Text = "Sửa";
-            this.btn_EditWord.UseVisualStyleBackColor = true;
+            this.btn_EditWord.UseVisualStyleBackColor = false;
             this.btn_EditWord.Click += new System.EventHandler(this.btn_EditWord_Click);
             // 
             // btn_DeleteWord
             // 
-            this.btn_DeleteWord.Location = new System.Drawing.Point(829, 56);
+            this.btn_DeleteWord.BackColor = System.Drawing.Color.Red;
+            this.btn_DeleteWord.Location = new System.Drawing.Point(1064, 69);
+            this.btn_DeleteWord.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DeleteWord.Name = "btn_DeleteWord";
-            this.btn_DeleteWord.Size = new System.Drawing.Size(100, 38);
+            this.btn_DeleteWord.Size = new System.Drawing.Size(133, 47);
             this.btn_DeleteWord.TabIndex = 5;
             this.btn_DeleteWord.Text = "Xóa";
-            this.btn_DeleteWord.UseVisualStyleBackColor = true;
+            this.btn_DeleteWord.UseVisualStyleBackColor = false;
             this.btn_DeleteWord.Click += new System.EventHandler(this.btn_DeleteWord_Click);
             // 
             // btn_AddWord
             // 
-            this.btn_AddWord.Location = new System.Drawing.Point(613, 56);
+            this.btn_AddWord.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_AddWord.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_AddWord.Location = new System.Drawing.Point(766, 69);
+            this.btn_AddWord.Margin = new System.Windows.Forms.Padding(4);
             this.btn_AddWord.Name = "btn_AddWord";
-            this.btn_AddWord.Size = new System.Drawing.Size(100, 38);
+            this.btn_AddWord.Size = new System.Drawing.Size(133, 47);
             this.btn_AddWord.TabIndex = 3;
             this.btn_AddWord.Text = "Thêm";
-            this.btn_AddWord.UseVisualStyleBackColor = true;
+            this.btn_AddWord.UseVisualStyleBackColor = false;
             this.btn_AddWord.Click += new System.EventHandler(this.btn_AddWord_Click);
             // 
             // txtVNLong_Manager
             // 
             this.txtVNLong_Manager.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtVNLong_Manager.Location = new System.Drawing.Point(361, 61);
+            this.txtVNLong_Manager.Location = new System.Drawing.Point(481, 75);
+            this.txtVNLong_Manager.Margin = new System.Windows.Forms.Padding(4);
             this.txtVNLong_Manager.Multiline = true;
             this.txtVNLong_Manager.Name = "txtVNLong_Manager";
             this.txtVNLong_Manager.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtVNLong_Manager.Size = new System.Drawing.Size(194, 154);
+            this.txtVNLong_Manager.Size = new System.Drawing.Size(257, 189);
             this.txtVNLong_Manager.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(357, 22);
+            this.label1.Location = new System.Drawing.Point(476, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 20);
+            this.label1.Size = new System.Drawing.Size(164, 25);
             this.label1.TabIndex = 21;
             this.label1.Text = "Dịch chi tiết nghĩa";
             // 
             // txtVNShort_Manager
             // 
-            this.txtVNShort_Manager.Location = new System.Drawing.Point(105, 149);
+            this.txtVNShort_Manager.Location = new System.Drawing.Point(140, 183);
+            this.txtVNShort_Manager.Margin = new System.Windows.Forms.Padding(4);
             this.txtVNShort_Manager.Multiline = true;
             this.txtVNShort_Manager.Name = "txtVNShort_Manager";
-            this.txtVNShort_Manager.Size = new System.Drawing.Size(168, 66);
+            this.txtVNShort_Manager.Size = new System.Drawing.Size(223, 80);
             this.txtVNShort_Manager.TabIndex = 1;
             // 
             // txtEnglish_Manager
             // 
-            this.txtEnglish_Manager.Location = new System.Drawing.Point(105, 61);
+            this.txtEnglish_Manager.Location = new System.Drawing.Point(140, 75);
+            this.txtEnglish_Manager.Margin = new System.Windows.Forms.Padding(4);
             this.txtEnglish_Manager.Multiline = true;
             this.txtEnglish_Manager.Name = "txtEnglish_Manager";
-            this.txtEnglish_Manager.Size = new System.Drawing.Size(168, 68);
+            this.txtEnglish_Manager.Size = new System.Drawing.Size(223, 83);
             this.txtEnglish_Manager.TabIndex = 0;
             // 
             // txtShorVN
             // 
             this.txtShorVN.AutoSize = true;
             this.txtShorVN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtShorVN.Location = new System.Drawing.Point(23, 147);
+            this.txtShorVN.Location = new System.Drawing.Point(31, 181);
+            this.txtShorVN.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtShorVN.Name = "txtShorVN";
-            this.txtShorVN.Size = new System.Drawing.Size(41, 20);
+            this.txtShorVN.Size = new System.Drawing.Size(51, 25);
             this.txtShorVN.TabIndex = 17;
             this.txtShorVN.Text = "Dịch";
             // 
@@ -233,28 +262,33 @@
             // 
             this.txtEnglish.AutoSize = true;
             this.txtEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnglish.Location = new System.Drawing.Point(23, 61);
+            this.txtEnglish.Location = new System.Drawing.Point(31, 75);
+            this.txtEnglish.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtEnglish.Name = "txtEnglish";
-            this.txtEnglish.Size = new System.Drawing.Size(61, 20);
+            this.txtEnglish.Size = new System.Drawing.Size(76, 25);
             this.txtEnglish.TabIndex = 16;
             this.txtEnglish.Text = "English";
             // 
             // btn_Reput
             // 
-            this.btn_Reput.Location = new System.Drawing.Point(27, 19);
+            this.btn_Reput.BackColor = System.Drawing.SystemColors.GrayText;
+            this.btn_Reput.Location = new System.Drawing.Point(914, 244);
+            this.btn_Reput.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Reput.Name = "btn_Reput";
-            this.btn_Reput.Size = new System.Drawing.Size(88, 23);
+            this.btn_Reput.Size = new System.Drawing.Size(133, 47);
             this.btn_Reput.TabIndex = 6;
             this.btn_Reput.Text = "Nhập lại";
-            this.btn_Reput.UseVisualStyleBackColor = true;
+            this.btn_Reput.UseVisualStyleBackColor = false;
             this.btn_Reput.Click += new System.EventHandler(this.btn_Reput_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.gridItemData);
-            this.groupBox2.Location = new System.Drawing.Point(12, 308);
+            this.groupBox2.Location = new System.Drawing.Point(16, 379);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(873, 279);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1164, 343);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách từ đã có";
@@ -272,14 +306,62 @@
             this.imageDataGridViewImageColumn,
             this.imgLocationDataGridViewTextBoxColumn});
             this.gridItemData.DataSource = this.listWordBindingSource1;
-            this.gridItemData.Location = new System.Drawing.Point(27, 19);
+            this.gridItemData.Location = new System.Drawing.Point(36, 23);
+            this.gridItemData.Margin = new System.Windows.Forms.Padding(4);
             this.gridItemData.Name = "gridItemData";
             this.gridItemData.RowHeadersVisible = false;
             this.gridItemData.RowHeadersWidth = 90;
             this.gridItemData.RowTemplate.Height = 64;
-            this.gridItemData.Size = new System.Drawing.Size(758, 241);
+            this.gridItemData.Size = new System.Drawing.Size(1109, 297);
             this.gridItemData.TabIndex = 0;
             this.gridItemData.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridItemData_RowEnter);
+            // 
+            // idwordDataGridViewTextBoxColumn
+            // 
+            this.idwordDataGridViewTextBoxColumn.DataPropertyName = "idword";
+            this.idwordDataGridViewTextBoxColumn.HeaderText = "idword";
+            this.idwordDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idwordDataGridViewTextBoxColumn.Name = "idwordDataGridViewTextBoxColumn";
+            this.idwordDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idwordDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // English
+            // 
+            this.English.DataPropertyName = "English";
+            this.English.HeaderText = "Tiếng Anh";
+            this.English.MinimumWidth = 6;
+            this.English.Name = "English";
+            this.English.ToolTipText = "sadsa";
+            // 
+            // vNShortDataGridViewTextBoxColumn
+            // 
+            this.vNShortDataGridViewTextBoxColumn.DataPropertyName = "VNShort";
+            this.vNShortDataGridViewTextBoxColumn.HeaderText = "Tiếng Việt";
+            this.vNShortDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.vNShortDataGridViewTextBoxColumn.Name = "vNShortDataGridViewTextBoxColumn";
+            // 
+            // vNLongDataGridViewTextBoxColumn
+            // 
+            this.vNLongDataGridViewTextBoxColumn.DataPropertyName = "VNLong";
+            this.vNLongDataGridViewTextBoxColumn.HeaderText = "Tiếng Việt chi tiết";
+            this.vNLongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.vNLongDataGridViewTextBoxColumn.Name = "vNLongDataGridViewTextBoxColumn";
+            // 
+            // imageDataGridViewImageColumn
+            // 
+            this.imageDataGridViewImageColumn.DataPropertyName = "Image";
+            this.imageDataGridViewImageColumn.HeaderText = "Hình ảnh";
+            this.imageDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.imageDataGridViewImageColumn.MinimumWidth = 6;
+            this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
+            // 
+            // imgLocationDataGridViewTextBoxColumn
+            // 
+            this.imgLocationDataGridViewTextBoxColumn.DataPropertyName = "ImgLocation";
+            this.imgLocationDataGridViewTextBoxColumn.HeaderText = "Vị trí hình ảnh";
+            this.imgLocationDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.imgLocationDataGridViewTextBoxColumn.Name = "imgLocationDataGridViewTextBoxColumn";
+            this.imgLocationDataGridViewTextBoxColumn.Visible = false;
             // 
             // listWordBindingSource1
             // 
@@ -309,66 +391,42 @@
             // 
             this.listWordTableAdapter1.ClearBeforeFill = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::W_DICTIONARY.Properties.Resources.oek;
+            this.pictureBox2.Location = new System.Drawing.Point(1201, 379);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(337, 343);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(992, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(1205, 25);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(205, 204);
+            this.pictureBox1.Size = new System.Drawing.Size(273, 251);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
-            // idwordDataGridViewTextBoxColumn
-            // 
-            this.idwordDataGridViewTextBoxColumn.DataPropertyName = "idword";
-            this.idwordDataGridViewTextBoxColumn.HeaderText = "idword";
-            this.idwordDataGridViewTextBoxColumn.Name = "idwordDataGridViewTextBoxColumn";
-            this.idwordDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idwordDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // English
-            // 
-            this.English.DataPropertyName = "English";
-            this.English.HeaderText = "Tiếng Anh";
-            this.English.Name = "English";
-            this.English.ToolTipText = "sadsa";
-            // 
-            // vNShortDataGridViewTextBoxColumn
-            // 
-            this.vNShortDataGridViewTextBoxColumn.DataPropertyName = "VNShort";
-            this.vNShortDataGridViewTextBoxColumn.HeaderText = "Tiếng Việt";
-            this.vNShortDataGridViewTextBoxColumn.Name = "vNShortDataGridViewTextBoxColumn";
-            // 
-            // vNLongDataGridViewTextBoxColumn
-            // 
-            this.vNLongDataGridViewTextBoxColumn.DataPropertyName = "VNLong";
-            this.vNLongDataGridViewTextBoxColumn.HeaderText = "Tiếng Việt chi tiết";
-            this.vNLongDataGridViewTextBoxColumn.Name = "vNLongDataGridViewTextBoxColumn";
-            // 
-            // imageDataGridViewImageColumn
-            // 
-            this.imageDataGridViewImageColumn.DataPropertyName = "Image";
-            this.imageDataGridViewImageColumn.HeaderText = "Hình ảnh";
-            this.imageDataGridViewImageColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.imageDataGridViewImageColumn.Name = "imageDataGridViewImageColumn";
-            // 
-            // imgLocationDataGridViewTextBoxColumn
-            // 
-            this.imgLocationDataGridViewTextBoxColumn.DataPropertyName = "ImgLocation";
-            this.imgLocationDataGridViewTextBoxColumn.HeaderText = "Vị trí hình ảnh";
-            this.imgLocationDataGridViewTextBoxColumn.Name = "imgLocationDataGridViewTextBoxColumn";
-            this.imgLocationDataGridViewTextBoxColumn.Visible = false;
-            // 
             // frmManagerWord
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1244, 644);
+            this.ClientSize = new System.Drawing.Size(1550, 732);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "frmManagerWord";
-            this.Text = "frmSearchWord_User";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DICTIONARY";
             this.Load += new System.EventHandler(this.frmManagerWord_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -378,6 +436,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dictionaryDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listWordBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dictionaryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -417,5 +476,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vNLongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn imageDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn imgLocationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

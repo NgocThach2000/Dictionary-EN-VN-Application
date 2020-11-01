@@ -180,7 +180,15 @@
   <ItemGroup>
     <None Include="Resources\caicap.jpg" />
     <None Include="Resources\caiban.jpg" />
+    <None Include="Resources\account.jpg" />
+    <None Include="Resources\hoa2-min.jpg" />
+    <None Include="Resources\account1.jpg" />
+    <None Include="Resources\hoa2-min1.jpg" />
     <Content Include="Resources\meo-plo_xiow.jpg" />
+    <None Include="Resources\oek.jpg" />
+    <None Include="Resources\oke.jpeg" />
+    <None Include="Resources\oek1.jpg" />
+    <None Include="Resources\oke1.jpeg" />
     <Content Include="Resources\th.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

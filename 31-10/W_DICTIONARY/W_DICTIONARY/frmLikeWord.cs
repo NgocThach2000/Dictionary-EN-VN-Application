@@ -122,5 +122,10 @@ namespace W_DICTIONARY
             cmd.ExecuteNonQuery();
             Loaddata();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

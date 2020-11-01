@@ -28,6 +28,7 @@ namespace W_DICTIONARY
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            picPanel.Hide();
             grLogin.Show();  
         }
 
@@ -82,6 +83,11 @@ namespace W_DICTIONARY
                 MessageBox.Show(ex.Message);
 
             }
+        }
+
+        private void frmDictionary_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
