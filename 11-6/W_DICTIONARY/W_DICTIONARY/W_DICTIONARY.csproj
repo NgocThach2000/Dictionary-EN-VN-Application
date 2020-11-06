@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A99A23A-D5AB-4AFF-965A-E70FFE616263}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>W_DICTIONARY</RootNamespace>
+    <AssemblyName>W_DICTIONARY</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>dictionary.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SpeechLib.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpeechLib.Models.1.6.0\lib\net40\SpeechLib.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DictionaryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DictionaryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DictionaryDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DictionaryDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmLikeWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLikeWord.Designer.cs">
+      <DependentUpon>frmLikeWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchWord_Guest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchWord_Guest.Designer.cs">
+      <DependentUpon>frmSearchWord_Guest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDictionary.Designer.cs">
+      <DependentUpon>frmDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageWord.Designer.cs">
+      <DependentUpon>frmManageWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchWord_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchWord_User.Designer.cs">
+      <DependentUpon>frmSearchWord_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDictionary.resx">
+      <DependentUpon>frmDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLikeWord.resx">
+      <DependentUpon>frmLikeWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchWord_Guest.resx">
+      <DependentUpon>frmSearchWord_Guest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageWord.resx">
+      <DependentUpon>frmManageWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchWord_User.resx">
+      <DependentUpon>frmSearchWord_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DictionaryDataSet.xsc">
+      <DependentUpon>DictionaryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DictionaryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DictionaryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DictionaryDataSet.xss">
+      <DependentUpon>DictionaryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DictionaryDataSet1.xsc">
+      <DependentUpon>DictionaryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DictionaryDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DictionaryDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DictionaryDataSet1.xss">
+      <DependentUpon>DictionaryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SpeechLib">
+      <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\May-bay-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caicap.jpg" />
+    <None Include="Resources\caiban.jpg" />
+    <None Include="Resources\account.jpg" />
+    <None Include="Resources\hoa2-min.jpg" />
+    <None Include="Resources\account1.jpg" />
+    <None Include="Resources\hoa2-min1.jpg" />
+    <Content Include="dictionary.ico" />
+    <Content Include="Resources\meo-plo_xiow.jpg" />
+    <None Include="Resources\oek.jpg" />
+    <None Include="Resources\oke.jpeg" />
+    <None Include="Resources\oek1.jpg" />
+    <None Include="Resources\oke1.jpeg" />
+    <Content Include="Resources\th.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
