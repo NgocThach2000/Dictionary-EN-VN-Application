@@ -1,2 +1,2 @@
-# Project-of-ThreeTTeam
+# Dictionary Application
 Phát triển giao diện
